@@ -1,0 +1,179 @@
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+
+/* nav section */
+nav .flex-container {
+  justify-content: space-around;
+}
+
+#logo {
+  margin: 30px;
+  display: inline-block;
+}
+
+.nav-item {
+  margin: 30px;
+}
+
+.nav-item a {
+  color: gray;
+}
+
+.nav-item a:hover {
+  color: #6610f2;
+  text-decoration: overline;
+}
+
+
+/* hero section */    /* removed for now */
+#hero {
+  width:80%;
+  height:80%;
+  background-image: url(../img/hero_bg.jpg);
+
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-text {
+  color: red;
+}
+
+
+/* all section */
+section {
+  margin: 20vh 5vw;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* works section */
+.projects {
+  width: 400px;
+  margin: 10px;
+}
+
+.projects img {
+  width: 400px;
+}
+
+.projects h5 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#works p {
+  color: #6610f2;
+  text-align: center;
+}
+
+
+/* about section */
+#about {
+  /* margin: 50px 5vw; */
+  padding: 50px;
+  background-color: #f7f7ef;
+}
+
+#about div div:last-of-type{
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/* #about div {
+  margin: 20px;
+} */
+
+.flex1 {
+  flex: 1;
+
+}
+
+.flex2 {
+  flex: 2;
+}
+
+
+
+/* books section */
+#books {
+  /* margin: 50px 5vw; */
+}
+
+#books img {
+  width: 180px;
+  align-items: center;
+}
+
+#books p {
+  color: #6610f2;
+  text-align: center;
+}
+
+
+/* contacts section */
+.contact {
+  width: 200px;
+  margin: 30px;
+}
+
+#me {
+  width: 400px;
+}
+
+#socials {
+  padding: 40px;
+}
+
+
+/* footer */
+footer {
+  padding:50px 0;
+  background-color: lightgray;
+  color: gray;
+  text-align: center;
+}
+
+
+/* media queries */
+@media screen and (max-width: 690px) {
+  nav {
+    position: fixed;
+    top: 0px;
+    color: #6610f2;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  #project1 {
+    order: 3;
+  }
+  #project2 {
+    order: 1;
+  }
+  #project3 {
+    order: 2;
+  }
+
+  #works p {
+    display: none;
+  }
+
+  #about div {
+    flex-direction: column;
+  }
+
+  #books div {
+    flex-wrap: wrap-reverse;
+  }
+
+}
